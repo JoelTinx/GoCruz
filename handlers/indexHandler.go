@@ -24,7 +24,7 @@ func init()  {
 }
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-  templates["index.html"].Execute(w, struct{ Title string }{Title: "GoCruz - Imagen a Punto Cruz"})
+  templates["index.tmpl"].Execute(w, struct{ Title string }{Title: "GoCruz - Imagen a Punto Cruz"})
 }
 
 func ConvertHandler(w http.ResponseWriter, r *http.Request) {
@@ -69,20 +69,20 @@ func DisplayHandler(w http.ResponseWriter, r *http.Request) {
     Imagen: fileOutput,
   }
 
-  templates["cross.html"].Execute(w, data)
+  templates["cross.tmpl"].Execute(w, data)
 }
 
 func GalleryHandler(w http.ResponseWriter, r *http.Request) {
-  templates["gallery.html"].Execute(w, struct{ Title string }{Title: "Galeria de Imagenes - GoCruz"})
+  templates["gallery.tmpl"].Execute(w, struct{ Title string }{Title: "Galeria de Imagenes - GoCruz"})
 }
 
 func AboutHandler(w http.ResponseWriter, r *http.Request) {
-  templates["about.html"].Execute(w, struct{ Title string }{Title: "Acerca de - GoCruz"})
+  templates["about.tmpl"].Execute(w, struct{ Title string }{Title: "Acerca de - GoCruz"})
 }
 
 func parseTemplates() map[string]*template.Template {
   result := make(map[string]*template.Template)
-  layout, _ := template.ParseFiles("templates/layout.html")
+  layout, _ := template.ParseFiles("templates/layout.tmpl")
   dir, _ := os.Open("templates/index")
   defer dir.Close()
 
