@@ -1,0 +1,15 @@
+{{define "title"}}{{ .Title }}{{end}}
+{{define "content"}}
+  <div class="container">
+    <div class="row">
+      <h4>Imagén convertida</h4>
+      <hr>
+      <img src="/public/images/converted/{{ .Imagen }}" alt="" />
+      <br>
+      <hr>
+      <div class="text-center">
+        <a href="/" class="btn btn-primary">Regresar</a>
+      </div>
+    </div>
+  </div>
+{{end}}

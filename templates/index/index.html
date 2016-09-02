@@ -1,0 +1,28 @@
+{{define "title"}}{{ .Title }}{{end}}
+{{define "content"}}
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div style="margin: 0 auto; text-align: center; padding-top: 25px;">
+          <img src="/public/images/gocross.png" alt="" style="margin: 0 auto; text-align: center;"/>
+        </div>
+        <hr>
+        <form action="/convert" method="POST" enctype="multipart/form-data">
+          <div>
+            <label for="imagen">Seleccione una imagen en formato JPG/PNG</label>
+            <div class="file-path-wrapper">
+              <input type="file" class="file-path validate" name="imagen" accept="image/*">
+            </div>
+          </div>
+          <br>
+          <div>
+            <label for="tamaño">Escala</label>
+            <input type="number" name="scale" value="10" min="2" max="30">
+          </div>
+          <br>
+          <input type="submit" class="btn waves-effect waves-light" value="Convertir">
+        </form>
+      </div>
+    </div>
+  </div>
+{{end}}
