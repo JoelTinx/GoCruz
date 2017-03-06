@@ -4,7 +4,7 @@ Convierte imagenes en formato JPG/PNG a un patro para hacer punto cruz.
 
 
 ![CoCruz Example]
-(http://gocruz.herokuapp.com/public/images/gocross.png)
+(https://raw.githubusercontent.com/JoelTinx/GoCruz/master/public/images/gogross.png)
 
 
 
