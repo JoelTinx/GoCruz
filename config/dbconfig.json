@@ -1,0 +1,7 @@
+{
+  "dbHost": "localhost",
+  "dbName": "dbgocruz",
+  "dbUser": "root",
+  "dbPass": "******",
+  "dbPort": "3306"
+}

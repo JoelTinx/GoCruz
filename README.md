@@ -7,6 +7,9 @@ Convierte imagenes en formato JPG/PNG a un patro para hacer punto cruz.
 (https://github.com/JoelTinx/GoCruz/blob/master/public/images/gocross.png)
 
 
+![CoCruz Example2]
+(https://github.com/JoelTinx/GoCruz/blob/master/public/images/gopher.png)
+
 
 ## Demo
 
