@@ -1,6 +1,6 @@
 # GoCruz:
 
-Convierte imagenes en formato JPG/PNG a un patro para hacer punto cruz.
+Convierte imagenes en formato JPG/PNG a un patron para hacer punto cruz.
 
 
 ![CoCruz Example](https://github.com/JoelTinx/GoCruz/blob/master/public/images/gocross.png?raw=true)
@@ -18,3 +18,5 @@ http://gocruz.herokuapp.com/
 Joel Tinx
 
 https://twitter.com/joeltinx/
+
+wizard.joel@outlook.com
