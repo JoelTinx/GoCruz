@@ -1,5 +1,16 @@
 package util
 
+import (
+  "image"
+  "image/color"
+  "image/jpeg"
+  "image/png"
+  "os"
+  "path/filepath"
+  "strconv"
+  "strings"
+)
+
 func ImageJpegToCross(filename string, scale int, pathOut string) error {
   file, err := os.Open(filename)
   if err != nil {
