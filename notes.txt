@@ -1,2 +1,3 @@
 - instalation notes
 - go version 1.8.1
+- Godeps v74
