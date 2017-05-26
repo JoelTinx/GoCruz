@@ -15,14 +15,8 @@ const (
 	dbPort = 3306
 )
 
-var connsql string
-
-func init() {
-	connsql = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", dbUser, dbPass, dbHost, dbPort, dbName)
-}
-
 func getConnection() (*sql.DB, error) {
-	db, err := sql.Open("mysql", connsql)
+	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", dbUser, dbPass, dbHost, dbPort, dbName))
 	if err != nil {
 		panic(err)
 	}
