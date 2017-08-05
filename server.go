@@ -17,6 +17,7 @@ func main() {
   http.HandleFunc("/gallery",   handlers.GalleryHandler)
   http.HandleFunc("/about",     handlers.AboutHandler)
   http.HandleFunc("/display",   handlers.DisplayHandler)
+  http.HandleFunc("/export",   handlers.DisplayHandler) // NF
 
   port := os.Getenv("PORT")
   if port == "" {
