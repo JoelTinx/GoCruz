@@ -4,3 +4,4 @@
 
 
 Nota: El proyecto se esta reestructurando, no funciona hasta nuevo aviso.
+- Se cambiará a gestor de packetes a govendor
